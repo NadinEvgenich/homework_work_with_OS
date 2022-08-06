@@ -12,7 +12,7 @@ def get_processes():
 
 
 def get_user():
-    return {i.USER for i in get_processes()}
+    return ", ".join({i.USER for i in get_processes()})
 
 
 def get_process():
@@ -21,31 +21,33 @@ def get_process():
 
 def get_user_process():
     up = Counter(i.USER for i in get_processes())
-    return up
+    return "\n\t".join([f"{key}: {value}" for key, value in up.items()])
 
 
 def get_mem():
     lis1 = sum([int(i.RSS) for i in get_processes()])
-    return lis1 / 10 ** 6
+    return round(lis1 / 10 ** 6, 2)
 
 
 def get_cpu():
-    return sum([float(i.CPU) for i in get_processes()])
+    return round(sum([float(i.CPU) for i in get_processes()]), 2)
 
 
 def get_max_mem():
-    return max([float(i.MEM) for i in get_processes()])
+    m = max(get_processes(), key=lambda one_process: one_process.MEM)
+    return f"{m.COMMAND[:20]} {m.MEM}%"
+
 
 def get_max_cpu():
-    return max([float(i.CPU) for i in get_processes()])
-
+    c = max(get_processes(), key=lambda process: process.CPU)
+    return f"{c.COMMAND[:20]} {c.MEM}%"
 
 
 if __name__ == "__main__":
     print(f"Пользователи системы: {get_user()}")
     print(f"Процессов запущено: {get_process()}")
-    print(f"Пользовательских процессов: {get_user_process()}")
+    print(f"Пользовательских процессов:\n\t{get_user_process()}")
     print(f"Всего памяти используется: {get_mem()} mb")
     print(f"Всего CPU используется: {get_cpu()} %")
-    print(f"Больше всего памяти использует: {get_max_mem()} %")
-    print(f"Больше всего CPU использует: {get_max_cpu()} %")
+    print(f"Больше всего памяти использует: {get_max_mem()} ")
+    print(f"Больше всего CPU использует: {get_max_cpu()} ")

@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7c5e448-cd2a-4b19-b572-a437a6ebf440" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/re2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +105,8 @@
       <workItem from="1658240967755" duration="1370000" />
       <workItem from="1658372473475" duration="1258000" />
       <workItem from="1658397828366" duration="5278000" />
-      <workItem from="1658707996086" duration="11544000" />
+      <workItem from="1658707996086" duration="12012000" />
+      <workItem from="1659604164757" duration="121000" />
     </task>
     <servers />
   </component>
@@ -126,7 +126,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/homework_work_with_OS$report.coverage" NAME="report Coverage Results" MODIFIED="1658761986128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/homework_work_with_OS$report.coverage" NAME="report Coverage Results" MODIFIED="1658797361210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/homework_work_with_OS$re2.coverage" NAME="re2 Coverage Results" MODIFIED="1658712042964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
